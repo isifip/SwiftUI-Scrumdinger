@@ -1,24 +1,16 @@
-//
-//  DetailView.swift
-//  ScrumDinger
-//
-//  Created by Irakli Sokhaneishvili on 20.01.22.
-//
-
 import SwiftUI
 
 struct DetailView: View {
+    @Binding var scrum: DailyScrum
     
-    let scrum: DailyScrum
-    
+    @State private var data = DailyScrum.Data()
     @State private var isPresentingEditView = false
     
     var body: some View {
         List {
-            Section("Meeting Info") {
-                NavigationLink(destination: MeetingVIew()) {
+            Section(header: Text("Meeting Info")) {
+                NavigationLink(destination: MeetingView()) {
                     Label("Start Meeting", systemImage: "timer")
-                        .accessibilityLabel("Start meeting")
                         .font(.headline)
                         .foregroundColor(.accentColor)
                 }
@@ -39,7 +31,7 @@ struct DetailView: View {
                 }
                 .accessibilityElement(children: .combine)
             }
-            Section("Attendees") {
+            Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
                     Label(attendee.name, systemImage: "person")
                 }
@@ -49,11 +41,12 @@ struct DetailView: View {
         .toolbar {
             Button("Edit") {
                 isPresentingEditView = true
+                data = scrum.data
             }
         }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationView {
-                EditView()
+                EditView(data: $data)
                     .navigationTitle(scrum.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -64,6 +57,7 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditView = false
+                                scrum.update(from: data)
                             }
                         }
                     }
@@ -75,7 +69,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            DetailView(scrum: DailyScrum.sampleData[0])
+            DetailView(scrum: .constant(DailyScrum.sampleData[0]))
         }
     }
 }

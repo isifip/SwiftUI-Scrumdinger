@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct MeetingVIew: View {
+struct MeetingView: View {
     var body: some View {
         VStack {
             ProgressView(value: 5, total: 15)
@@ -39,6 +39,6 @@ struct MeetingVIew: View {
 
 struct MeetingVIew_Previews: PreviewProvider {
     static var previews: some View {
-        MeetingVIew()
+        MeetingView()
     }
 }
