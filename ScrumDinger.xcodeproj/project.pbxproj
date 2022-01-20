@@ -15,6 +15,7 @@
 		C775A4BB2799A2C8007AC98C /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775A4BA2799A2C8007AC98C /* DailyScrum.swift */; };
 		C775A4BD2799A37C007AC98C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775A4BC2799A37C007AC98C /* CardView.swift */; };
 		C775A4BF2799AEC3007AC98C /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775A4BE2799AEC3007AC98C /* TrailingIconLabelStyle.swift */; };
+		C775A4C12799B066007AC98C /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775A4C02799B066007AC98C /* ScrumsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C775A4BA2799A2C8007AC98C /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		C775A4BC2799A37C007AC98C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C775A4BE2799AEC3007AC98C /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		C775A4C02799B066007AC98C /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 		C775A4A827999E93007AC98C /* ScrumDinger */ = {
 			isa = PBXGroup;
 			children = (
-				C775A4B72799A16B007AC98C /* Models */,
 				C775A4A927999E93007AC98C /* ScrumDingerApp.swift */,
+				C775A4B72799A16B007AC98C /* Models */,
 				C775A4AB27999E93007AC98C /* MeetingVIew.swift */,
 				C775A4BC2799A37C007AC98C /* CardView.swift */,
+				C775A4C02799B066007AC98C /* ScrumsView.swift */,
 				C775A4BE2799AEC3007AC98C /* TrailingIconLabelStyle.swift */,
 				C775A4AD27999E94007AC98C /* Assets.xcassets */,
 				C775A4AF27999E94007AC98C /* Preview Content */,
@@ -160,6 +163,7 @@
 				C775A4BB2799A2C8007AC98C /* DailyScrum.swift in Sources */,
 				C775A4BF2799AEC3007AC98C /* TrailingIconLabelStyle.swift in Sources */,
 				C775A4B92799A18C007AC98C /* Theme.swift in Sources */,
+				C775A4C12799B066007AC98C /* ScrumsView.swift in Sources */,
 				C775A4AC27999E93007AC98C /* MeetingVIew.swift in Sources */,
 				C775A4AA27999E93007AC98C /* ScrumDingerApp.swift in Sources */,
 				C775A4BD2799A37C007AC98C /* CardView.swift in Sources */,
