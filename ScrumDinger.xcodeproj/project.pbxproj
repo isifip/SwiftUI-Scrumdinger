@@ -13,6 +13,7 @@
 		C775A4B127999E94007AC98C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C775A4B027999E94007AC98C /* Preview Assets.xcassets */; };
 		C775A4B92799A18C007AC98C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775A4B82799A18C007AC98C /* Theme.swift */; };
 		C775A4BB2799A2C8007AC98C /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775A4BA2799A2C8007AC98C /* DailyScrum.swift */; };
+		C775A4BD2799A37C007AC98C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775A4BC2799A37C007AC98C /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C775A4B027999E94007AC98C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C775A4B82799A18C007AC98C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		C775A4BA2799A2C8007AC98C /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		C775A4BC2799A37C007AC98C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				C775A4B72799A16B007AC98C /* Models */,
 				C775A4A927999E93007AC98C /* ScrumDingerApp.swift */,
 				C775A4AB27999E93007AC98C /* MeetingVIew.swift */,
+				C775A4BC2799A37C007AC98C /* CardView.swift */,
 				C775A4AD27999E94007AC98C /* Assets.xcassets */,
 				C775A4AF27999E94007AC98C /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 				C775A4B92799A18C007AC98C /* Theme.swift in Sources */,
 				C775A4AC27999E93007AC98C /* MeetingVIew.swift in Sources */,
 				C775A4AA27999E93007AC98C /* ScrumDingerApp.swift in Sources */,
+				C775A4BD2799A37C007AC98C /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
